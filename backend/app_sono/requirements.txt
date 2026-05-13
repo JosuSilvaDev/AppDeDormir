@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────────────────────
+#  requirements.txt
+#  DEPENDÊNCIAS DO BACKEND
+#
+#  Como instalar tudo de uma vez:
+#  pip install -r requirements.txt
+#
+#  O que cada biblioteca faz:
+# ─────────────────────────────────────────────────────────────
+
+# FastAPI — framework principal da API
+# Transforma funções Python em rotas HTTP
+fastapi==0.111.0
+
+# Uvicorn — servidor que roda o FastAPI
+# É ele que fica "escutando" as requisições do celular
+uvicorn==0.29.0
+
+# Pydantic — validação de dados
+# Define e valida a estrutura dos dados que chegam e saem da API
+pydantic==2.7.1
+
+# Python-multipart — necessário para receber formulários
+# Usado quando o app envia dados via POST
+python-multipart==0.0.9
+
+# Stripe — pagamentos e assinaturas PRO
+# Integração com o sistema de cobrança
+stripe==9.5.0
+
+# Python-dotenv — carrega variáveis de ambiente (.env)
+# Usado para guardar chaves secretas (Stripe, etc.)
+python-dotenv==1.0.1
